@@ -1,1 +1,2 @@
-# zhooda.github.io
+# artificial intelligence.
+### making up for my lack of real intelligence.
