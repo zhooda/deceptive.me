@@ -1,49 +1,573 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            deceptive.me
+        </title>
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta content="" name="keywords">
+        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <!-- Waye v1.0 || ex nihilo || January 2018 -->
+        <!-- style start -->
+        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
+        <!-- google fonts start -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700" rel="stylesheet" type="text/css">
+        <!-- google fonts end -->
+        <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+        <!--
+        -->
+    </head>
+    <body>
+        <!-- preloader start -->
+        <div class="preloader-bg"></div>
+        <div id="preloader">
+            <div id="preloader-status">
+                <div class="preloader-position loader">
+                    <span></span>
+                </div>
+            </div>
+        </div><!-- preloader end -->
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>i make artificial intelligence | deceptive.me</title>
-<meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="i make artificial intelligence" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://deceptive.me/" />
-<meta property="og:url" content="http://deceptive.me/" />
-<meta property="og:site_name" content="deceptive.me" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://deceptive.me/","headline":"i make artificial intelligence","name":"deceptive.me","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+        <!-- navigation trigger start -->
+        <div class="menu-trigger top-position" id="menu-mobile-btn">
+            <button class="lines-button minus menu-toggle" id="menu-mobile-caller" type="button"><span class="lines inverse"></span></button>
+        </div><!-- navigation trigger end -->
+        <!-- navigation start -->
+        <div id="ui-layer">
+            <div id="menu-wrapper">
+                <div id="menu-mobile">
+                    <div class="menu-nav-wrapper">
+                        <nav class="menu-nav">
+                            <ul>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu active call-home" id="fire-home">Home</a>
+                                </li>
+                                <!--
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-about">About</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-services">Services</a>
+                                </li>
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-works">Works</a>
+                                </li>
+                                -->
+                                <li class="menu-mobile">
+                                    <a class="menu-state link-underline-menu call-page" id="fire-contact">Contact</a>
+                                </li>
+                                <li class="credits">
+                                    <a href="#">&copy; 2019 deceptive labs,</a>
+                                </li>
+                                <li class="credits">
+                                    <a href="#">All Rights Reserved.</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div><!-- navigation end -->
+        <!-- border top start -->
+        <div class="the-borders border-top top-position"></div><!-- border top end -->
+        <!-- border left start -->
+        <div class="the-borders border-left left-position"></div><!-- border left end -->
+        <!-- border right start -->
+        <div class="the-borders border-right right-position"></div><!-- border right end -->
+        <!-- border bottom start -->
+        <div class="the-borders border-bottom bottom-position"></div><!-- border bottom end -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="/assets/css/style.css?v=9917fe08af90adac9ab7686a7e3135859adc2861">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">deceptive.me</h1>
-      <h2 class="project-tagline"></h2>
-      
-        <a href="https://github.com/zhooda/deceptive.me" class="btn">View on GitHub</a>
-      
-      
-    </section>
+        <!-- wave start -->
+        <canvas class="bottom-position" id="wave"></canvas><!-- wave end -->
+        <!-- social icons start -->
+        <!--
+        <div class="social-icons-wrapper bottom-position">
+            <ul class="social-icons">
+                <li class="social-icon">
+                    <a class="ion-social-twitter" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-facebook" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-googleplus" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-youtube" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-linkedin" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-instagram" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-pinterest" href="#"></a>
+                </li>
+                <li class="social-icon">
+                    <a class="ion-social-dribbble" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- social icons end -->
+        <!-- countdown start -->
+        <div class="countdown bottom-position">
+            <h3>
+                <!--
+                <img src="css/logoAsset%20160.png" style="width: 60px; height: 60px">
+                {dnnn}
+                <img src="css/logo.png" style="width: 60px; height: 60px">-->
+            </h3>
+            <h2 class="countdown-bottom">
+                <!--{dl}-->
+            </h2>
+        </div>
+        <!-- logo start -->
+        <div class="logo top-position">
+            <a href="http://deceptive.me/">
+                <img src="css/logoAsset%20160.png" style="image-resolution: 300dpi; width: 60px; height: 60px;">
+            </a>
+        </div><!-- logo end -->
+        <!-- hero bg start -->
+        <div class="hero-fullscreen">
+            <!-- single image start -->
+            <div class="hero-fullscreen-FIX">
+                <div class="hero-bg bg-img-SINGLE overlay overlay-dark-65"></div>
+            </div><!-- single image end -->
+        </div><!-- hero bg end -->
 
-    <section class="main-content">
-      <h1 id="i-make-artificial-intelligence">i make artificial intelligence</h1>
+        <!-- home start -->
+        <div class="upper-page current" id="home">
+            <!-- center container start -->
+            <div class="center-container-home">
+                <!-- center block start -->
+                <div class="center-block-home">
+                    <!-- upper content start -->
+                    <div class="upper-content">
+                        <!-- container start -->
+                        <div class="container sections-home">
+                            <!-- row start -->
+                            <div class="row introduction">
+                                <h2 class="home-page-title fadeIn-element">
+                                    ai. ml. ds.
+                                </h2>
+                                <h1 class="home-page-title fadeIn-element">
+                                    deceptive.me
+                                </h1>
+                                <div class="sign-up-modal-launcher-wrapper fadeIn-element">
+                                    <a class="button-link sign-up-modal-launcher"><span>Learn More</span><!--<i class="ion-android-arrow-dropright"></i>--></a>
+                                    <!-- col end -->
+                                </div>
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- upper content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+            <!-- social icons mobile start -->
+            <div class="social-icons-wrapper social-icons-wrapper-mobile bottom-position">
+                <!-- <ul class="social-icons">
+                    <li class="social-icon">
+                        <a class="ion-social-twitter" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-facebook" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-googleplus" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-youtube" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-linkedin" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-instagram" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-pinterest" href="#"></a>
+                    </li>
+                    <li class="social-icon">
+                        <a class="ion-social-dribbble" href="#"></a>
+                    </li>
+                </ul> -->
+            </div><!-- social icons mobile end -->
+            <!-- countdown start
+            <div class="countdown countdown-mobile bottom-position">
+                <h3>
+                    {dnnn}
+                </h3>
+                <h2 class="countdown-bottom">
+                    {dl}
+                </h2>
+            </div>--><!-- countdown end -->
+        </div><!-- home end -->
+        <!-- sign up modal start -->
+        <div class="sign-up-modal">
+            <!-- container start -->
+            <div class="container">
+                <!-- center container start -->
+                <div class="center-container-sign-up-modal">
+                    <!-- center block start -->
+                    <div class="center-block-sign-up-modal">
+                        <!-- row start -->
+                        <div class="row center-block-sign-up-modal-padding-top">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <p>OUR WEBSITE'S NOT RAEDY<br><br>BUT WE'RE ALL SET TO HELP YOU<br><br><span style="font-size: 17px"><strong>&rang; GROW &lang;</strong></span><br><br></p>
+                                <h2 class="section-heading">
+                                    are you ready?
+                                </h2>
+                                <p><br><br><span style="font-size: 17px"><strong>GET IN TOUCH:</strong></span><br><br>
 
-<p>Yes, I do. Don’t get too excited, its only to make up for my lack of real intelligence.</p>
+                                    <span class="contact-info-text large" style="line-height: 20px">
 
+                                    <a class="link-underline" href="mailto:contact@domainname.com">info@intellis.ca</a><br>
+                                    <a class="link-underline" href="tel:7802651613">&lang;780&rang; 265 &mdash; 1613</a>
 
-      <footer class="site-footer">
-        
-          <span class="site-footer-owner"><a href="https://github.com/zhooda/deceptive.me">deceptive.me</a> is maintained by <a href="https://github.com/zhooda">zhooda</a>.</span>
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </section>
+                                    </span>
 
-    
-  </body>
+                                    <br><br><span style="font-size: 17px"><strong>OR</strong></span></p>
+
+                                <div style="text-align:center;">
+                                <button class="c-btn fullwidth-liquid"><span class="contact-modal-launcher">Send a message</span></button>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                            <!-- col start -->
+                                <div class="sign-up-modal-closer">
+                                    <p><br><br><br>&lang; BACK</p><!-- <span class="ion-close"></span> -->
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- center block end -->
+                </div><!-- center container end -->
+        </div>
+        <!-- about start -->
+        <div class="lower-page" id="about">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>Who we are</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        About
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-md-6 col-sm-12 about-block">
+                                    <h4 class="about-heading">
+                                        Years in business
+                                    </h4>
+                                    <div class="about-number-title facts-counter-number">
+                                        19
+                                    </div>
+                                    <p>
+                                        In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis. Donec interdum ipsum quis varius tristique. Aenean tortor orci, luctus ut
+                                        arcu eu, <a class="link-underline" href="#">porta ultrices dui</a>.
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-6 col-sm-12 about-block about-block-correction">
+                                    <h4 class="about-heading">
+                                        Countries reached
+                                    </h4>
+                                    <div class="about-number-title facts-counter-number">
+                                        76
+                                    </div>
+                                    <p>
+                                        In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis. Donec interdum ipsum quis varius tristique. Aenean tortor orci, luctus ut
+                                        arcu eu, <a class="link-underline" href="#">porta ultrices dui</a>.
+                                    </p>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- about end -->
+        <!-- services start -->
+        <div class="lower-page" id="services">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading">
+                                        <span>What we do</span>
+                                    </h2>
+                                    <h2 class="section-heading">
+                                        Services
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block">
+                                    <h4 class="service-heading">
+                                        Design
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Design
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 1 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 1 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod in tellus in mattis. Aliquam erat volutpat. Praesent ultricies aliquet erat a <a class=
+                                        "link-underline" href="#">semper</a>.
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Branding
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Branding
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 2 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 2 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        In dignissim accumsan ullamcorper. Aliquam nec augue id mauris convallis venenatis. Donec interdum ipsum quis varius tristique. Aenean tortor orci, luctus ut
+                                        arcu eu, <a class="link-underline" href="#">porta ultrices dui</a>.
+                                    </p>
+                                </div><!-- col end -->
+                                <!-- col start -->
+                                <div class="col-md-4 col-sm-12 services-block services-block-correction">
+                                    <h4 class="service-heading">
+                                        Identity
+                                    </h4>
+                                    <div class="service-number-title">
+                                        Identity
+                                    </div><!-- skills bar start -->
+                                    <div class="show-skillbar">
+                                        <!-- skill 3 start -->
+                                        <div class="skillbar" data-percent="100">
+                                            <span class="skillbar-title"></span>
+                                            <div class="skillbar-bar"></div><span class="skill-bar-percent"></span>
+                                        </div><!-- skill 3 end -->
+                                    </div><!-- skills bar end -->
+                                    <p>
+                                        Aenean commodo augue at libero luctus blandit. Ut non justo ipsum. Donec malesuada non nulla vitae porttitor. Ut vehicula augue erat, ut accumsan <a class=
+                                        "link-underline" href="#">felis rutrum</a>.
+                                    </p>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- services end -->
+        <!-- contact start -->
+        <div class="lower-page" id="contact">
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- lower content start -->
+                    <div class="lower-content">
+                        <!-- container start -->
+                        <div class="container sections">
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <h2 class="section-subheading section-subheading-contact">
+                                        <span>Get in touch</span>
+                                    </h2>
+                                    <h2 class="section-heading section-heading-contact">
+                                        Contact
+                                    </h2>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- contact info start -->
+                                <div class="contact-info-wrapper">
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            <i class="contact-info-description-img">&uArr;</i> <span class="contact-info-text">Placeholder<br>
+                                            Nothing to see here</span>
+                                        </div>
+                                    </div><!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            <i class="contact-info-description-img large">@</i> <span class="contact-info-text large"><a class="link-underline" href=
+                                            "mailto:info@intellis.ca">info@intellis.ca</a></span>
+                                        </div>
+                                    </div><!-- col end -->
+                                    <!-- col start -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="contact-info-description">
+                                            <i class="contact-info-description-img">&dArr;</i> <span class="contact-info-text large"><a class="link-underline" href=
+                                            "tel:info@7802651613">&lang;780&rang; 265 &mdash; 1613</a></span>
+                                        </div>
+                                    </div><!-- col end -->
+                                </div><!-- contact info end -->
+                            </div><!-- row end -->
+                            <!-- divider start -->
+                            <div class="dividerOT"></div><!-- divider end -->
+                            <!-- row start -->
+                            <div class="row">
+                                <!-- col start -->
+                                <div class="col-lg-12">
+                                    <div class="contact-modal-launcher-wrapper">
+                                        <a class="button-link contact-modal-launcher"><span>Use the form</span></a>
+                                    </div>
+                                </div><!-- col end -->
+                            </div><!-- row end -->
+                        </div><!-- container end -->
+                    </div><!-- lower content end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+        </div><!-- contact end -->
+        <!-- contact modal start -->
+        <div class="contact-modal">
+            <!-- container start -->
+            <div class="container">
+                <!-- center container start -->
+                <div class="center-container-contact-modal">
+                    <!-- center block start -->
+                    <div class="center-block-contact-modal">
+                        <!-- row start -->
+                        <div class="row center-block-contact-modal-padding-top">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <h2 class="section-heading">
+                                    Get in touch
+                                </h2>
+                                <p>
+                                    Promise, we won't stay silent
+                                </p>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row contact-modal-wrapper">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <!-- contact form start -->
+                                <div id="jcf">
+                                    <form action="" method="post" id="contact_form">
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="contact_name requiredField name" id="name" name="name" placeholder="Name" type="text">
+                                        </div><!-- col end -->
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="contact_email requiredField email" id="email" name="email" placeholder="Email" type="text">
+                                        </div><!-- col end -->
+                                        <!-- col start -->
+                                        <div class="col-sm-4 col-md-4 col-lg-4">
+                                            <input class="contact_subject requiredField subject" id="subject" name="subject" placeholder="Subject" type="text">
+                                        </div><!-- col end -->
+                                        <div class="make-space">
+                                            <textarea class="contact_message requiredField message" id="message" name="message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div>
+                                            <button class="c-btn fullwidth-liquid" id="send_message" type="submit"><span>Submit</span></button>
+                                        </div>
+                                    </form>
+                                </div><!-- contact form end -->
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                        <!-- row start -->
+                        <div class="row center-block-contact-modal-padding-bottom">
+                            <!-- col start -->
+                            <div class="col-lg-12">
+                                <div class="contact-modal-closer">
+                                    <p>&lang; BACK</p>
+                                </div>
+                            </div><!-- col end -->
+                        </div><!-- row end -->
+                    </div><!-- center block end -->
+                </div><!-- center container end -->
+            </div><!-- container end -->
+        </div><!-- contact modal end -->
+        <!-- photoSwipe background start -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                        "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                        "Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                    "Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- photoSwipe background end -->
+        <!-- to top arrow start -->
+        <a class="scrollToTop" href="#">
+        <div class="to-top-arrow to-top-arrow">
+            <span>&uarr;</span>
+        </div></a><!-- to top arrow end -->
+        <!-- scripts start -->
+        <script src="js/plugins.js">
+        </script>
+        <script src="js/waye.js">
+        </script>
+        <script src="js/wave.js">
+        </script> <!-- scripts end -->
+    </body>
 </html>
-
